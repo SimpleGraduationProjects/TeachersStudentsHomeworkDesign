@@ -15,8 +15,8 @@
 <body>
 	<!--JDBC 驱动名及数据库 URL 数据库的用户名与密码，需要根据自己的设置useUnicode=true&characterEncoding=utf-8 防止中文乱码-->
 	<sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
-    	 url="jdbc:mysql://localhost:3306/userdb?useUnicode=true&characterEncoding=utf-8"
-    	 user="root"  password="sxzt888888"/>
+    	 url="jdbc:mysql://localhost:3306/graduation_6_userdb?useUnicode=true&characterEncoding=utf-8"
+    	 user="root"  password="123456"/>
 	<sql:query dataSource="${snapshot}" var="result">
 	SELECT * from t_works;
 	</sql:query>
